@@ -41,7 +41,7 @@ with open(csvpath) as dataset:
     totalmonths = 0
     prof_loss_tot = 0
     chnge_dict = {}
-    prev_row = 0
+    prev_row = ""
     inc_val = 0
     dec_val = 0
     inc_dte = ""
@@ -51,7 +51,7 @@ with open(csvpath) as dataset:
         totalmonths += 1
         prof_loss_tot += int(row[1])
         
-        if prev_row != 0:
+        if prev_row != "":
             chnge_dict.update({row[0]: int(row[1]) - int(prev_row)})
         prev_row = int(row[1])
         
@@ -62,13 +62,13 @@ with open(csvpath) as dataset:
     #     dec_val = int(row[1])
     #     dec_dte = row[0]
 
-    for val in chnge_dict:
-        if chnge_dict[val] > inc_val:
-            inc_val = chnge_dict[val]
-            inc_dte = val
-        elif chnge_dict[val] < dec_val:
-            dec_val = chnge_dict[val]
-            dec_dte = val
+    for key in chnge_dict:
+        if chnge_dict[key] > inc_val:
+            inc_val = chnge_dict[key]
+            inc_dte = key
+        elif chnge_dict[key] < dec_val:
+            dec_val = chnge_dict[key]
+            dec_dte = key
 
     
 
