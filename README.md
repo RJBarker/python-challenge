@@ -7,7 +7,6 @@
 This task of the assignment requires the analysis of the provided "budget_data.csv" dataset. The data contains two columns, a "Date" column, and a "Profit/Losses" column.  
   
 There were 6 tasks to complete with this dataset:  
-
 	- The total number of months included in the dataset  
 	- The net total amount of "Profit/Losses" over the entire period  
 	- The changes in "Profit/Losses" over the entire period, and then the average of those changes  
