@@ -74,7 +74,7 @@ print("-------------------------")
 
 
 ## Write the results to a text file
-output_path = os.path.join('Analysis', 'analysis_results.txt')
+output_path = os.path.join('Analysis', 'election_results.txt')
 
 with open(output_path, 'w') as txtfile:
     txtfile.write('Election Results\n')
