@@ -9,7 +9,6 @@
     # 3 - The changes in "Profit/Losses" over the entire period, and then the average of those changes
     # 4 - The greatest increase in profits (date and amount) over the entire period
     # 5 - The greatest decrease in profits (date and amount) over the entire period
-
 #----------------------------#
 # Code Start
 #----------------------------#
@@ -31,13 +30,7 @@ with open(csvpath) as dataset:
 
     # Skip and store the header row
     dataheader = next(datareader)
-
-    # # Print the rows to test the file is being read correctly. Comment out once checked and confirmed
-    # print(dataheader)
-    # for row in datareader:
-    #     print(row)
-
-    
+  
     # Set initial var
     totalmonths = 0     # Used to store count of months
     prof_loss_tot = 0   # Used to calculate the total of prof/loss
@@ -48,6 +41,7 @@ with open(csvpath) as dataset:
     inc_dte = ""        # Var to store the greatest increase date 
     dec_dte = ""        # Var to store the greatest decrease date
 
+    ## Iterate through each row of the data
     for row in datareader:
 
         ## 1 - Get total number of months in the dataset
@@ -68,7 +62,7 @@ with open(csvpath) as dataset:
 
     ## 3 - The changes in "Profit/Losses" over the entire period, and then the average of those changes
     # Using the values in the dictionary, calculate the avg change as a float and round to 2 decimal places    
-    avg_chnge = round(float((sum(chnge_dict.values()) / len(chnge_dict.values()))),2)    # 
+    avg_chnge = round(float((sum(chnge_dict.values()) / len(chnge_dict.values()))),2) 
 
     ## 4 - The greatest increase in profits (date and amount) over the entire period
     ## 5 - The greatest decrease in profits (date and amount) over the entire period
@@ -80,7 +74,8 @@ with open(csvpath) as dataset:
         elif chnge_dict[key] < dec_val:
             dec_val = chnge_dict[key]
             dec_dte = key
-   
+
+
 ## Write the results to a text file
 output_path = os.path.join('Analysis', 'analysis_results.txt')
 
@@ -96,7 +91,9 @@ with open(output_path, 'w') as txtfile:
     txtfile.write('Greatest Decrease in Profits: ' + dec_dte + ' ($' + str(dec_val) + ')\n')
     txtfile.close
 
+
 ## Print the results to the terminal
+print("")
 print("Financial Analysis")
 print("")
 print("----------------------------")
