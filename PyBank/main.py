@@ -1,18 +1,3 @@
-#%%
-
-# Overall Task: Analyze the finanaces of your company.
-# Dataset contains two columns: Date and Profit/Losses
-#----------------------------#
-# Tasks:
-    # 1 - Get total number of months in the dataset
-    # 2 - The net total amount of "Profit/Losses" over the entire period
-    # 3 - The changes in "Profit/Losses" over the entire period, and then the average of those changes
-    # 4 - The greatest increase in profits (date and amount) over the entire period
-    # 5 - The greatest decrease in profits (date and amount) over the entire period
-#----------------------------#
-# Code Start
-#----------------------------#
-
 # Import required modules
 
 # os for file path
