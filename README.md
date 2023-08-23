@@ -35,9 +35,9 @@ There were 6 tasks to complete with this dataset:
 
 ### References
 
-Dataset provided by: edX Boot Camps LLC  
-Opening csv file code, setting delimiter and header retrieval: Class 2 Activities > Activity 08 > Solved > read_csv_solution.py  
-Knowledge of iterating through dictionaries to retrieve the values: https://realpython.com/iterate-through-dictionary-python/#iterating-through-items  
-Writing to a new line in a text file: https://stackoverflow.com/questions/2918362/writing-string-to-a-file-on-a-new-line-every-time	
-Markdown Reference/Best Practices: https://www.markdownguide.org/basic-syntax/	
-Concise code in PyPoll for only putting unique candidate names into the dict: https://stackoverflow.com/questions/12897374/get-unique-values-from-a-list-in-python	
+Dataset provided by: edX Boot Camps LLC   
+Opening csv file code, setting delimiter and header retrieval: Class 2 Activities > Activity 08 > Solved > read_csv_solution.py   
+Knowledge of iterating through dictionaries to retrieve the values: https://realpython.com/iterate-through-dictionary-python/#iterating-through-items   
+Writing to a new line in a text file: https://stackoverflow.com/questions/2918362/writing-string-to-a-file-on-a-new-line-every-time    
+Markdown Reference/Best Practices: https://www.markdownguide.org/basic-syntax/   
+Concise code in PyPoll for only putting unique candidate names into the dict: https://stackoverflow.com/questions/12897374/get-unique-values-from-a-list-in-python   
